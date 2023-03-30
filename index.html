@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tercera Entrega - Proyecto Final</title>
+    <!-- ARCHIVO CSS PERSONAL -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <!-- SWEET ALERT -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>    
+    
+
+</head>
+<body>
+    <header id="home">        
+        <nav id="nav">
+            <div class="nav-center">                
+                <div class="nav-header">
+                    <img src="./img/logo2.png" class="logo" alt="logo"/>
+                    <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+                </div>               
+                <div class="links-contenedor">
+                    <ul class="links">
+                        <li><a href="#home" class="scroll-link">home</a></li>
+                        <li><a href="#destinos" class="scroll-link">destinos</a></li>
+                        <li><a href="#simulador" class="scroll-link">simulador</a></li>
+                        <li><a href="#contacto" class="scroll-link">contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
+        <div class="banner">
+            <video class="video-contenedor" muted autoplay loop>
+                <source src="./img/video2.mp4" type="video/mp4">
+            </video>            
+            <div>
+                <h1 class="tituloBanner">AGENCIA DE VIAJES</h1>
+                <h2 class="subtituloBanner">
+                    bienvenidos a nuestra agencia de viajes!
+                </h2>  
+            </div>                  
+        </div>
+    </header>
+    
+    <section id="destinos" class="section">
+        <div class="title div-destinos">            
+            <h2 class="tituloDestinos">nuestros <span>destinos</span></h2>
+            <div class="container">                
+                <article class="review">
+                    <div class="img-contenedor">
+                        <img src="" id="destino-img" alt="">
+                    </div>
+                    <h3 id="lugar"></h3>
+                    <p id="descripcion"></p>
+                    <p id="precio"></p>
+                    <div class="button-container">
+                        <button class="prev-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="btn btn-simular" id="simular"><a href="#simulador">
+                            Simular Costo</a>           
+                        </button>
+                        <button class="next-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </article>                
+            </div>            
+        </div>
+        
+    </section>
+    
+    <section id="simulador" class="section">
+        <div class="title">
+            <h2 class="tituloServicios">simulador <span>de costos</span></h2>           
+        </div>
+        <div class="divFormulario">        
+            <div>
+                <div class="form-group m-auto g-0">
+                    <h4>Destinos</h4>                    
+                    <select class="form-select text-center" name="destino" id="select" required>
+                    </select>                    
+                </div>
+                <div class="row form-group m-auto gx-1">
+                    <div class="col-6">
+                        <label for="" class="">Cantidad de Pasajeros</label>
+                        <input id="pasajeros" type="text" min="1" value="1" placeholder="1" class="form-control text-center"> 
+                    </div>                       
+                    <div class="col-6">
+                        <label for="" class="">Cantidad de Noches</label>
+                        <input id="noches" type="text" min="1" placeholder="1" value="1" class="form-control text-center" required>
+                    </div>                                 
+                </div>
+                <div class="row form-group m-auto g-0">
+                    <div class="col-12">
+                        <label for="" class="">Valija Extra<br></label>
+                        <select class="form-select text-center" name="" id="valija">
+                            <option class="valija" value="0">No</option>
+                            <option class="valija" value="1">Si</option>
+                        </select>  
+                    </div>                                                         
+                </div>
+                <div class="row form-group m-auto g-0">
+                    <label for="" class="">Cotizacion del dolar<br></label>
+                    <div class="col-12 input-group">                        
+                        <span class="input-group-text">U$S</span>
+                        <input type="text" class="form-control text-center" id="cotizacion">  
+                    </div>                 
+                </div>
+                <div class="row form-group m-auto g-0">
+                    <label>Total en Dolares<br></label>
+                    <div class="col-12 input-group">                        
+                        <span class="input-group-text">U$S</span>
+                        <input type="text" class="form-control text-center" id="dolares">  
+                    </div>                 
+                </div>
+                <div class="row form-group m-auto g-0">
+                    <label>Total en Pesos</label>
+                    <div class="col-12 input-group">
+                        <span class="input-group-text">$</span>
+                        <input id="total" type="text" class="form-control text-center " name="total" placeholder="">
+                    </div>
+                    
+                </div>
+                <div class="form-group">
+                    <button id="calcular" class="btn">Calcular</button>
+                </div>
+            </div>            
+        </div> 
+    </section>
+    
+    <section id="contacto" class="section" >
+        <div class="title">
+            <h2 class="tituloContacto">contacto<span></span></h2>
+        </div>
+        <div class="divFormulario focus">        
+            <form>
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control inputs" name="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <label>Apellido</label>
+                    <input type="text" class="form-control inputs" name="Apellido" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control inputs" name="Email" placeholder="name@coderhouse.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Comentarios</label>
+                    <textarea class="form-control inputs" name="Comentarios" rows="3" required></textarea>
+                </div>
+                <div class="col-auto divBotones">
+                    <input type="submit" class="btn btn-success mb-2 btnForm btn-sm" id="enviar"></input>
+                    <button type="reset" class="btn btn-danger mb-2 btnForm btn-sm">borrar</button>
+                    <button class="btn btn-primary mb-2 btnForm cambiarColor btn-sm" id="btn" title="#F1F5F8">cambiar color</button>
+                </div>
+            </form>            
+        </div>        
+    </section>
+    
+    <footer>
+        <p>coderhouse - curso javascript  <span id="fecha"></span> / Proyecto Final - Alumno: facundo Videla</p>
+    </footer>
+    <a class="scroll-link top-link" href="#home"><i class="fas fa-arrow-up"></i></a>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

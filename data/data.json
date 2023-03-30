@@ -1,0 +1,72 @@
+[{
+    "id": 1, 
+    "imagen": "./img/destino.jpg", 
+    "lugar": "Riviera maya", 
+    "pais": "Mexico", 
+    "descripcion": "La Riviera Maya es una popular región turística de México, localizada hacia el sur de Cancún, donde puedes encontrar algunas de las playas más hermosas del Caribe.", 
+    "precio": 1000.00
+},
+{
+    "id": 2, 
+    "imagen": "./img/destino2.jpg", 
+    "lugar": "Florianopolis", 
+    "pais": "Brasil", 
+    "descripcion": "Florianópolis es más que paisajes selváticos y un centro lleno de historia. Con 42 playas, abandonar la arena será una tarea difícil, pero no imposible.", 
+    "precio": 550.00
+},
+{
+    "id": 3, 
+    "imagen": "./img/destino3.jpeg", 
+    "lugar": "Iguazu", 
+    "pais": "Argentina", 
+    "descripcion": "Al norte de la provincia de Misiones, en el límite con Brasil, se encuentran las majestuosas Cataratas del Iguazú: una de las Siete Maravillas Naturales del Mundo y, sin dudas, uno de los lugares más espectaculares de Latinoamérica.", 
+    "precio": 200.00
+},
+{
+    "id": 4, 
+    "imagen": "./img/destino4.jpg", 
+    "lugar": "Calafate", 
+    "pais": "Argentina", 
+    "descripcion": "El Calafate, tierra de paisajes  inolvidables y un emblema nacional! La imponente naturaleza en El Calafate ha cautivado al mundo. Destino espectacular en la Patagonia argentina que recibe miles de turistas nacionales y extranjeros a lo largo del año, tiene una infraestructura turística excepcional.", 
+    "precio": 350.00
+},
+{
+    "id": 5, 
+    "imagen": "./img/destino5.jpg", 
+    "lugar": "Paris", 
+    "pais": "Francia", 
+    "descripcion": "La eterna ciudad de los enamorados. Caminá sobre la Avenida de los Campos Elíseos y tentate con su glamour. Emocionate con las cicatrices de la Catedral de Notre Dame, el emblema de la ciudad que intenta renacer de sus cenizas. Los viajes nos hacen, nos marcan, no delimitan y en cada recuerdo, siempre te quedará París.", 
+    "precio": 1500.00
+},
+{
+    "id": 6, 
+    "imagen": "./img/destino6.jpg", 
+    "lugar": "Nueva York", 
+    "pais": "USA", 
+    "descripcion": "En Nueva York, una atmósfera cosmopolita envuelve a sus más de 8 millones de habitantes y turistas que transitan por sus calles día y noche. Entre rascacielos emblemáticos y parques que te invitan a bajar el ritmo, el destino está lleno de experiencias que son verdaderos descubrimientos multiculturales.", 
+    "precio": 1300.00
+},
+{
+    "id": 7, 
+    "imagen": "./img/destino7.jpg", 
+    "lugar": "Bariloche", 
+    "pais": "Argentina", 
+    "descripcion": "Bariloche te recibe con un paisaje diferente en todas las estaciones. Ya sea que vayas en verano para disfrutar de sus lagos o en invierno, para recorrer sus cerros y divertirte con la nieve. Respirá verde, en el medio del Parque Nacional Nahuel Huapi. Cualquier parte de la ciudad te conecta con la naturaleza. Subiendo al Cerro Otto, Campanario y Catedral te esperan escenarios únicos!", 
+    "precio": 200.00
+},
+{
+    "id": 8, 
+    "imagen": "./img/destino8.jpg", 
+    "lugar": "Puerto Madryn", 
+    "pais": "Argentina", 
+    "descripcion": "Situada en la provincia de Chubut, Puerto Madryn es una ciudad que brinda la posibilidad de un contacto total con la naturaleza. Una de las actividades más maravillosas es el avistaje de ballenas, motivo por el cual éste es un destino visitado por turistas de todo el mundo.", 
+    "precio": 350.00
+},
+{
+    "id": 9, 
+    "imagen": "./img/destino9.jpg", 
+    "lugar": "Purmamarca", 
+    "pais": "Argentina", 
+    "descripcion": "Este es un destino espectacular, un pueblo en el norte de Argentina que preservó su cultura y su arquitectura, contando con un trazado urbano realizado alrededor de la Iglesia Santa Rosa de Lima, la principal del pueblo, que cuenta en su interior con ornamentos y pinturas antiguas hechas por indígenas. ", 
+    "precio": 250.00
+}]
